@@ -1,122 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Transaction HTML Email</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <style>
+      @media only screen and (max-width: 1960px){
+        .container {
+          width: 600px;
+        }
+      }
+      @media only screen and (max-width: 600px){
+        .container {
+          width: 100% !important;
+          display: block !important;
+        }
+        .header {
+          width: 100% !important;
+          display: block !important;
+        }
+        .header .bridgeworkslogo{
+            text-align: center !important;
+        }
+        .header .transaction{
+            display: block !important;
+            text-align: left !important;
+        }
+        .header tbody tr td:nth-child(1) {
+            display: block !important;
+            width: 100% !important;
+            text-align: center !important;
+        }
+        .header tbody tr td:nth-child(2) {
+            display: block !important;
+            /*float: left;*/
+            text-align: left !important;
+        }
+        .hello {
+            width: 100% !important;
+            margin: 0 !important;
+            display: block;
+            float: left;
+            text-align: left;
+            }     
+        .merchant {
+            width: 100% !important;
+            margin: 0 !important;
+            display: block;
+            float: left;
+            text-align: left;
+            } 
+        .description {
+            width: 100% !important;
+            margin: 0 !important;
+            display: block;
+            float: left;
+            text-align: left;
+            }      
+        .description tbody {
+            width: 100% !important;
+            display: inline-block !important;
+        }
+        .description .description-data {
+            display: inline-block !important;
+            padding: 5px 3px 5px 3px !important;
+            width: 17% !important;
+        }
+        .description tbody tr td:nth-child(1) {
+            padding: 5px 50px 5px 1px !important;
+        }
+        .description tbody tr td:nth-child(3) {
+            width: 7% !important;
+            padding: 5px 35px 5px 20px !important;
+        }
+        .description tbody tr td:nth-child(4) {
+            padding: 5px 16px 5px 0px !important;
+        }
+        .description .description-price{
+            padding: 1px !important;
+            width: 24% !important;
+            display: inline-block !important;
+        }
+        /*.description tbody tr:nth-child(2) .description-price   { 
+            padding: 5px 18px 5px 1px !important;
+            border: 1px solid pink;
+        }*/
+        .description .description-section .one {
+            padding: 5px 10px 5px 1px !important;
+        }
+        .description .description-section .two {
+            padding: 5px 5px 5px 15px !important;
+        }
+        .description .description-section .four {
+            padding: 5px 0px 5px 30px !important;
+        }
+        .description .description-price a{
+            display: none !important;
+        }
+        .description .description-price tr td{
+            width: 24% !important;
+            display: inline-block !important;
+        }
+        .description .description-section .three {
+            width: 2% !important;
+            display: inline-block !important;
+            padding: 5px 0px 5px 11px !important;
+        }
+        /*.description .description-section .four {
+            width: 23% !important;
+            display: inline-block !important;
+            padding: 5px 0px 5px 15px !important;
+            border: 1px solid blue;
+        }*/
+        /*.subtotal {
+            width: 440px !important;
+            margin: 0 !important;
+            display: block;
+            float: left;
+            text-align: left;
+            }  */
+        .subtotal tbody {
+            width: 100% !important;
+            display: block !important;
+        } 
+        .subtotal  td{
+            text-align: left !important;
+            padding: 0 0px 0 1px !important;
+        }
+        .footer {
+            width: 440px !important;
+            margin: 0 !important;
+            display: block;
+            float: left;
+            text-align: left;
+            } 
+      }
 
-<table width="600" cellspacing="0" cellpadding="0" border="0" align="center">
-    <tbody>
-        <tr valign="top">
-            <td width="100%">
-                <table style="color:#333333!important;font-family:arial,helvetica,sans-serif;font-size:12px;margin-bottom: 10px;" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
-                    <tbody>
-                        <tr valign="top">
-                            <td><img src="https://i.postimg.cc/WpxrT5hP/Bridge-works.png" alt="bridgeworks logo" class="bridgeworks-logo" border="0" style="width: 30%;"></td>
-                            <td valign="middle" align="right">Nov 25, 2021 21:54:26 EST
-                                <br>Transaction ID: <a href="https://www.bridgeworks.com" target="_blank">4VE55081WG423333H</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table style="margin-top:30px;color:#333!important;font-family:arial,helvetica,sans-serif;font-size:12px"><span style="color:#333333!important;font-weight:bold;font-family:arial,helvetica,sans-serif">Hello Martha Wayne,</span>
-                    <br>
-                    <br>
-                    <p style="font-size:14px;color:#c88039;font-weight:bold;text-decoration:none">You sent a payment of $445.30 USD to BRIDGEWORKS Co.,Ltd.
-                        <br><span style="font-size:14px;color:#c88039;font-weight:bold;text-decoration:none"> (<a href="mailto:info@bridgeworks.com" target="_blank">info@bridgeworks.com</a>) </span></p>
-                    <table cellpadding="5">
-                        <tbody>
-                            <tr>
-                                <td valign="top"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <br>It may take a few moments for this transaction to appear in your account.
-                    <br>
-                    <div style="margin-top:5px;clear:both">
-                        <hr size="1">
-                    </div>
-                    <table style="color:#666666!important;font-family:arial,helvetica,sans-serif;font-size:11px;margin-bottom:20px;clear:both" width="98%" cellspacing="0" cellpadding="0" border="0" align="left">
-                        <tbody>
-                            <tr>
-                                <td style="padding-top:15px" width="50%" valign="top" align="left"><span style="color:#333333;font-weight:bold">Merchant</span>
-                                    <br>BRIDGEWORKS Co.,Ltd.
-                                    <br><a href="mailto:info@bridgeworks.com" target="_blank">info@bridgeworks.com</a>
-                                    <br>
-                                </td>
-                                <td style="padding-top:15px" valign="top"><span style="color:#333333;font-weight:bold">Instructions to merchant</span>
-                                    <br>You haven't entered any instructions.</td>
-                            </tr>
-                            <tr>
-                                <td style="padding-top:15px" width="40%" valign="top" align="left"><span style="font-family:arial,helvetica,sans-serif;font-size:12px"><span style="color:#333333;font-weight:bold">Shipping address - </span><span style="color:#4c8f3a">confirmed</span></span>
-                                    <br>Martha Wayne
-                                    <br>1007 Mountain Drive
-                                    <br>Gotham,&nbsp;NJ&nbsp;19007-7007
-                                    <br>United States
-                                    <br>
-                                </td>
-                                <td style="padding-top:15px" valign="top"><span style="color:#333333;font-weight:bold">Shipping details</span>
-                                    <br>The seller hasn’t provided any shipping details yet.</td>
-                            </tr>
-                        </tbody>
-                    </table>
+      /* Client-specific Styles */
+#outlook a {
+    padding: 0;
+} /* Force Outlook to provide a "view in browser" menu link. */
+body {
+    width: 100% !important;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+.ExternalClass {
+    width: 100%;
+} /* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%;
+} /* Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+#backgroundTable {
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+    line-height: 100% !important;
+}
 
-                    <table style="clear:both;color:#666666!important;font-family:arial,helvetica,sans-serif;font-size:11px" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
-                        <tbody>
-                            <tr>
-                                <td style="border:1px solid #ccc;border-right:none;border-left:none;padding:5px 10px 5px 10px!important;color:#333333!important" width="350" align="left">Description</td>
-                                <td style="border:1px solid #ccc;border-right:none;border-left:none;padding:5px 10px 5px 10px!important;color:#333333!important" width="100" align="right">Unit price</td>
-                                <td style="border:1px solid #ccc;border-right:none;border-left:none;padding:5px 10px 5px 10px!important;color:#333333!important" width="50" align="right">Qty</td>
-                                <td style="border:1px solid #ccc;border-right:none;border-left:none;padding:5px 10px 5px 10px!important;color:#333333!important" width="80" align="right">Amount</td>
-                            </tr>
-                            <tr>
-                                <td style="padding:10px" align="left"><a href="http://bridgeworks.com" target="_blank"><span class="il">bridgeworks</span>.com</a> order ID 77715
-                                    <br>Item# 77735</td>
-                                <td style="padding:10px" align="right">$445.30 USD</td>
-                                <td style="padding:10px" align="right">1</td>
-                                <td style="padding:10px" align="right">$445.30 USD</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table style="border-top:1px solid #ccc;border-bottom:1px solid #ccc;clear:both;color:#666666!important;font-family:arial,helvetica,sans-serif;font-size:11px;margin-bottom: 10px;" width="595" cellspacing="0" cellpadding="0" border="0" align="left">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <table style="color:#666666!important;font-family:arial,helvetica,sans-serif;font-size:11px;margin-top:20px;clear:both;width:100%" cellspacing="0" cellpadding="0" border="0" align="right">
-                                        <tbody>
-                                            <tr>
-                                                <td style="width:390px;text-align:right;padding:0 10px 0 0"><strong>Subtotal</strong></td>
-                                                <td style="width:90px;text-align:right;padding:0 5px 0 0">$445.30 USD</td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width:390px;text-align:right;padding:0 10px 0 0"><span style="color:#333333!important;font-weight:bold">Total</span></td>
-                                                <td style="width:90px;text-align:right;padding:0 5px 0 0">$445.30 USD</td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width:390px;text-align:right;padding:20px 10px 0 0"><span style="color:#333333!important;font-weight:bold">Payment</span></td>
-                                                <td style="width:90px;text-align:right;padding:20px 5px 0 0">$445.30 USD</td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width:390px;text-align:right;padding:10px 10px 10px 0">Payment sent to <a href="mailto:info@bridgeworks.com" target="_blank">info@bridgeworks.com</a></td>
-                                                <td style="width:90px;text-align:right;padding:20px 5px 0 0"></td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <br>
-                    <br>
-                    <br><span style="clear:left;font-weight:bold;color:#333333">Issues with this transaction?</span>
-                    <br><span style="font-size: 12px;font-family: arial,helvetica,sans-serif;color: #333 !important;"><p style="margin-top: 2px !important;">You have 180 days from the date of the transaction to open a dispute in the Resolution Center.</p></span>
-                    <br>
-                    <br><span style="font-size: 12px;font-family: arial,helvetica,sans-serif;color: #333 !important;">Questions? Go to the Help Center at <a href="http://www.bridgeworks.com/help" target="_blank">www.bridgeworks.com/help</a>.</span>
-                    <br>
-                    <br>
-                    <br>
-                    <br><span style="font-size:11px;color:#333">Please do not reply to this email. This mailbox is not monitored and you will not receive a response. For assistance, log in to your Bridgeworks account and click <strong>Help</strong> in the top right corner of any Bridgeworks page.</span>
-                    <br>
-                    <br><span style="font-size:11px;color:#333">You can receive plain text emails instead of HTML emails. To change your Notifications preferences, log in to your account, go to your Profile, and click <strong>My settings</strong>.<br><br></span><br>
-                    <hr width="400"><span>Copyright © 1999-2021 bridgeworks. All rights reserved.<br></span>
-                    <br><span style="color:#333333;font-family:arial,helvetica,sans-serif;font-size:11px"><span>Bridgeworks Email ID PP777 - 5e4877738bd03</span></span></table>
-                </td>
-        </tr>
-    </tbody>
-</table>
+/*##############################################*/
+ /*IPHONE STYLES*/
+ /*##############################################*/
+@media only screen and (max-width: 480px) {
+table {
+    position: relative;
+    width: 100% !important;
+    display: block !important;
+}
+/*table tbody {
+
+    width: 100% !important;
+    display: block !important;
+}*/
+table tbody tr{
+width: 100% !important;
+display: block !important;
+}
+table tbody tr td{
+
+width: 100% !important;
+display: block !important;
+}
+/*.container .header {
+    width: 100% !important;
+}
+.container .hello {
+    width: 100% !important;
+}*/
+.container{
+    padding: 5px !important;
+}
+.hello {
+    width: 100% !important;
+}
+.merchant {
+    width: 100% !important;
+}
+.description {
+    width: 100% !important;
+}
+.description tbody tr td {
+    width: 100% !important;
+    text-align: left !important;
+}
+.subtotal {
+    width: 100% !important;
+}
+.footer {
+    width: 100% !important;
+}
+.footer hr {
+    width: 50% !important;
+}
+
+}
+    </style>
+  </head>
+  <body style="background: #ffffff;">
+    <!-- start of transactional html email -->
+  
+        <table width="600" cellspacing="0" cellpadding="0" border="0" align="center" class="container">
+            <tbody>
+                <tr valign="top">
+                    <td width="100%">
+                        <!-- start of header section-->
+                        <table style="color:#333333!important;font-family:arial,helvetica,sans-serif;font-size:12px;margin-bottom: 10px;" width="600" cellspacing="0" cellpadding="0" border="0" align="center" class="header">
+                            <tbody>
+                                <tr valign="top">
+                                    <td class="bridgeworkslogo">
+                                        <img src="https://i.postimg.cc/WpxrT5hP/Bridge-works.png" alt="bridgeworkslogo"  border="0" style="width: 30%;">
+                                    </td>
+                                    <td class="transaction" valign="middle" align="right">
+                                        Nov 25, 2021 21:54:26 EST
+                                        <br>
+                                        Transaction ID:
+                                        <a href="https://www.bridgeworks.com" target="_blank">
+                                        4VE55081WG423333H
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- end of header section-->
+
+
+                        <!-- start of Hello Martha Wayne section-->
+                        <table style="color:#333333!important;font-size:12px;margin-bottom: 10px;" width="600" cellspacing="0" cellpadding="0" border="0" align="center" class="hello">
+                            <tbody>
+                                <tr valign="top">
+                                    <td>
+                                        <span style="color:#333333!important;font-weight:bold;font-family:arial,helvetica,sans-serif;font-size: 16px;">Hello Martha Wayne,</span>
+                                            <br>
+                                            <br>
+                                            <p style="font-size:14px;color:#c88039;font-weight:bold;text-decoration:none">You sent a payment of $445.30 USD to BRIDGEWORKS Co.,Ltd.
+                                                <br>
+                                                <span style="font-size:14px;color:#c88039;font-weight:bold;text-decoration:none"> (<a href="mailto:info@bridgeworks.com" target="_blank">info@bridgeworks.com</a>) 
+                                                </span>
+                                            </p>
+                                            <br>
+                                            <span style="font-size: 16px;">
+                                                It may take a few moments for this transaction to appear in your account.
+                                            </span>
+                                            <br>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- end of Hello Martha Wayne section-->
+
+                        <!--start of Merchant section-->
+                        <table style="color:#666666!important;font-family:arial,helvetica,sans-serif;font-size:11px;margin-bottom:20px;clear:both;" class="merchant" width="600" cellspacing="0" cellpadding="0" border="0" align="left">
+                            <tbody style="width: 100%; display: block;">
+                                <tr>
+                                    <td style="padding-top:15px" width="50%" valign="top" align="left"><span style="color:#333333;font-weight:bold">Merchant</span>
+                                        <br>BRIDGEWORKS Co.,Ltd.
+                                        <br><a href="mailto:info@bridgeworks.com" target="_blank">info@bridgeworks.com</a>
+                                        <br>
+                                    </td>
+                                    <td style="padding-top:15px" valign="top"><span style="color:#333333;font-weight:bold">Instructions to merchant</span>
+                                        <br>You haven't entered any instructions.</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top:15px" width="40%" valign="top" align="left"><span style="font-family:arial,helvetica,sans-serif;font-size:12px"><span style="color:#333333;font-weight:bold">Shipping address - </span><span style="color:#4c8f3a">confirmed</span></span>
+                                        <br>Martha Wayne
+                                        <br>1007 Mountain Drive
+                                        <br>Gotham,&nbsp;NJ&nbsp;19007-7007
+                                        <br>United States
+                                        <br>
+                                    </td>
+                                    <td style="padding-top:15px" valign="top"><span style="color:#333333;font-weight:bold">Shipping details</span>
+                                        <br>The seller hasn’t provided any shipping details yet.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--end of Merchant section-->
+
+                        <!--start of Description section-->
+                        <table style="clear:both;color:#666666!important;font-family:arial,helvetica,sans-serif;font-size:11px;" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" class="description">
+                            <tbody style="width: 100% !important; display: block;">
+                                <tr><td class="description-data" style="border:1px solid #ccc;border-right:none;border-left:none;padding:5px 10px 5px 10px;color:#333333!important" width="350" align="left">Description</td><td class="description-data" style="border:1px solid #ccc;border-right:none;border-left:none;padding:5px 10px 5px 10px;color:#333333!important" width="100" align="right">Unit price</td><td class="description-data" style="border:1px solid #ccc;border-right:none;border-left:none;padding:5px 10px 5px 10px;color:#333333!important" width="50" align="right">Qty</td><td class="description-data" style="border:1px solid #ccc;border-right:none;border-left:none;padding:5px 10px 5px 10px;color:#333333!important" width="80" align="right">Amount</td>
+                                </tr>
+                                <tr class="description-section">
+                                    <td class="description-price one" style="padding:10px" align="left"><a href="http://bridgeworks.com" target="_blank"><span class="il">bridgeworks</span>.com</a> order ID 77715
+                                        <br>Item# 77735</td><td class="description-price two" style="padding:10px" align="right">$445.30 USD</td><td class="description-price three" style="padding:10px" align="right">1</td>
+                                    <td class="description-price four" style="padding:10px" align="right">$445.30 USD</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--end of Description section-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!--start of Subtotal section-->
+                        <table style="border-top:1px solid #ccc;border-bottom:1px solid #ccc;clear:both;color:#666666!important;font-family:arial,helvetica,sans-serif;font-size:11px;margin-bottom: 10px;" width="595" cellspacing="0" cellpadding="0" border="0" align="left" class="subtotal">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table style="color:#666666!important;font-family:arial,helvetica,sans-serif;font-size:11px;margin-top:20px;clear:both;width:100%;" cellspacing="0" cellpadding="0" border="0" align="right">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width:390px;text-align:right;padding:0 10px 0 0"><strong>Subtotal</strong></td>
+                                                    <td style="width:90px;text-align:right;padding:0 5px 0 0">$445.30 USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width:390px;text-align:right;padding:0 10px 0 0"><span style="color:#333333!important;font-weight:bold">Total</span></td>
+                                                    <td style="width:90px;text-align:right;padding:0 5px 0 0">$445.30 USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width:390px;text-align:right;padding:20px 10px 0 0"><span style="color:#333333!important;font-weight:bold">Payment</span></td>
+                                                    <td style="width:90px;text-align:right;padding:20px 5px 0 0">$445.30 USD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width:390px;text-align:right;padding:10px 10px 10px 0">Payment sent to <a href="mailto:info@bridgeworks.com" target="_blank">info@bridgeworks.com</a></td>
+                                                    <td style="width:90px;text-align:right;padding:20px 5px 0 0"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--end of Subtotal section-->
+
+                        <!--start of Footer section-->
+                        <table class="footer">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <br>
+                                        <br>
+                                        <br><span style="clear:left;font-weight:bold;color:#333333">Issues with this transaction?</span>
+                                        <br><span style="font-size: 12px;font-family: arial,helvetica,sans-serif;color: #333 !important;"><p style="margin-top: 2px !important;">You have 180 days from the date of the transaction to open a dispute in the Resolution Center.</p></span>
+                                        <br>
+                                        <br><span style="font-size: 12px;font-family: arial,helvetica,sans-serif;color: #333 !important;">Questions? Go to the Help Center at <a href="http://www.bridgeworks.com/help" target="_blank">www.bridgeworks.com/help</a>.</span>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br><span style="font-size:11px;color:#333">Please do not reply to this email. This mailbox is not monitored and you will not receive a response. For assistance, log in to your Bridgeworks account and click <strong>Help</strong> in the top right corner of any Bridgeworks page.</span>
+                                        <br>
+                                        <br><span style="font-size:11px;color:#333">You can receive plain text emails instead of HTML emails. To change your Notifications preferences, log in to your account, go to your Profile, and click <strong>My settings</strong>.<br><br></span><br>
+                                        <hr width="400"><span>Copyright © 1999-2021 bridgeworks. All rights reserved.<br></span>
+                                        <br><span style="color:#333333;font-family:arial,helvetica,sans-serif;font-size:11px"><span>Bridgeworks Email ID PP777 - 5e4877738bd03</span></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                        <!--end of Footer section-->
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    <!--end of transactional html email -->
+  </body>
+</html>
