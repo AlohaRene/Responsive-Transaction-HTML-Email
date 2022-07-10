@@ -1,16 +1,27 @@
-<p>Project highlighting a Transactional email. Done with inline styling on the html elements with consideration for compatibility across all major email clients.</p>
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://aloharene.github.io/Responsive-Transaction-HTML-Email/">
+    <img src="https://i.postimg.cc/9FW9yHtv/Transactional.png" alt="Logo" width="600" height="900">
+  </a>
+<br />
+<br />
+  <p align="center">
+    The Responsive Transactional HTML Email. The email is a simple online reciept.
+    <br />
+    <br />
+    <br />
+  </p>
+</div>
 
-<p>The email can be seen at <a href="https://aloharene.github.io/Responsive-Transaction-HTML-Email/" rel="nofollow">Responsive-Transaction-HTML-Email</a></p>
+## Built With
 
-<h2><a id="user-content-built-with" class="anchor" aria-hidden="true" href="#built-with"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Built With</h2>
+* [HTML](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-<ul>
-<li><a href="https://www.w3.org/TR/html/" rel="nofollow">HTML5</a> - Latest HTML markup language</li>
-<li><a href="https://www.w3.org/standards/techs/css#w3c_all" rel="nofollow">CSS3</a> - Latest css3 used</li>
-</ul>
+<!-- CONTACT -->
+## Contact
 
-<h2><a id="user-content-contributors" class="anchor" aria-hidden="true" href="#contributors"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Contributors</h2>
+Rene Arenas Flores - [@Aloha_Rene](https://twitter.com/Aloha_Rene)
 
-<ul>
-<li><strong>Rene Arenas Flores</strong> - <em>Initial work</em></li>
-</ul>
+Project Link: [https://aloharene.github.io/Responsive-Transaction-HTML-Email/)
